@@ -73,7 +73,7 @@ To upgrade the contract and modify the string, follow these steps:
     sui client upgrade --upgrade-capability UPGRADE_CAP_ID
     ```
 
-7. Update the `Move.toml` file to reference the new package ID:
+7. You will get a new package ID from the 6th steps. Update the `Move.toml` file to reference the new package ID:
 
     ```toml
     [Packages]
@@ -88,3 +88,4 @@ To upgrade the contract and modify the string, follow these steps:
 
 This will create an object with the updated string `Hello World v2`.
 
+NOTE: You are not allowed to change the function signature .
